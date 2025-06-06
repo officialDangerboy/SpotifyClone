@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <header>
+    <i class="ham bi bi-list"></i>
+    <div class="spotify">
+      <h1>
+        Spotify Musics
+      </h1>
+    </div>
+    <div class="nav">
+      <div class="logo">
+        <i class="bi bi-spotify"></i>
+      </div>
+      <div class="home">
+        <i class="bi bi-house-door-fill"></i>
+      </div>
+      <div class="search">
+        <div class="sricon">
+          <i class="bi bi-search"></i>
+        </div>
+        <div class="srinp">
+          <input type="text"id="search" placeholder="Why do you..."/>
+        </div>
+        <div class="sriconlft">
+          <i class="bi bi-file-break"></i>
+        </div>
+      </div>
+      <div class="searchr">
+      <div class="premium"><h3>Premium</h3></div>
+      <div class="support"><h3>Support</h3></div>
+      <div class="download"><h3>Download</h3></div>
+    </div>
+    </div>
+    <div class="center"><h1>|</h1></div>
+    <div class="navr">
+     <div class="install"><h3><i class="bi bi-cloud-arrow-down"></i>Install</h3></div>
+     <div class="signup"><h3>Sign up</h3></div>
+     <div class="login"><h3>Login</h3></div>
+    </div>
+    
+  </header>
+  <section class="main">
+    <div class="rgt">
+      <div class="rgtop">
+        <h5>
+          Your Library
+        </h5>
+        <div class="icondiv">
+        <i class="close bi bi-x-lg"></i>
+        </div>
+      </div>
+      <div class="playlistcontainer">
+        <ul>
+
+        </ul>
+      </div>
+      <div class="foot">
+        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+             
+        <button class="button" type="submit"><i class="bi bi-globe"></i>English</button>
+      </div>
+    </div>
+    <div class="lft">
+      <section class="albums">
+        <div class="cardnav">
+          <h1>
+           Trending Songs
+          </h1>
+          <p>
+            Show All
+          </p>
+        </div>
+      <div class="cardflow">
+        <div class="cardcontainer">
+          <div class="card">
+            <img src="https://i.ibb.co/nsymRK0j/1749188181856.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4>
+              PunjabiSongs
+            </h4>
+            <p>
+              Artist - Shubh
+            </p>
+          </div>
+        </div>
+        <div class="cardcontainer">
+          <div class="card">
+            <img src="https://i.ibb.co/q3xwX8sF/images-18.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4>
+              PunjabiSongs
+            </h4>
+            <p>
+              Artist - Sidhu
+            </p>
+          </div>
+        </div>        
+        <div class="cardcontainer">
+          <div class="card">
+            <img src="https://i.ibb.co/TxJWQ77r/images-23.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4>
+              HolywoodSongs
+            </h4>
+            <p>
+              Artist - AlanWalker
+            </p>
+          </div>
+        </div>
+        <div class="cardcontainer">
+          <div class="card">
+            <img src="https://i.ibb.co/5xtMnXSv/IMG-20240520-204245-957.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4>
+              NewSongs
+            </h4>
+            <p>
+              ComingSoon
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <div class="footer">
+      <div class="song"></div>
+      <div class="butt">
+        <i class="bi bi-caret-left"></i>
+        <i class="bi bi-play-circle-fill"></i>
+        <i class="bi bi-caret-right"></i>
+      </div>
+      <div class="duration">
+      </div>
+        <div class="vol">
+          <i class="bi bi-volume-up"></i>
+          <input type="range" name="vol" id="vol">
+        </div>
+      <div class="seek">
+        <div class="dot"></div>
+      </div>
+    </div>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
