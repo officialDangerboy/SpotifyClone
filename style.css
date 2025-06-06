@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Signika:wght@300..700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.close{
+  display:none;
+}
+.spotify{
+  display:none;
+}
+.ham{
+  display:none;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+}
+header{
+  display: flex;
+  position: sticky;
+  top:0;
+  height: 50px;
+  z-index: 10;
+  background: black;
+  width: 100vw;
+}
+.nav{
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap:10px;
+}
+.logo{
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#1ED760;
+}
+
+.logo i,.home i{
+  font-size: 30px;
+}
+.logo i {
+  font-size: 40px;
+}
+.home{
+  padding:2px 10px;
+  background: #1F1F1F;
+  border-radius: 30px;
+}
+.search{
+  background: #1F1F1F;
+  padding:12px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:10px;
+  border-radius: 30px;
+  border:1px solid gray;
+}
+.search input{
+  background:transparent;
+  border:none;
+}
+h3{
+  text-decoration: bold;
+  font-weight: 600;
+  font-size: 18px;
+  color:#B3B3B3;
+}
+.navr{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap:15px;
+  padding: 0 10px;
+  width: 30vw;
+  height: 3vh;
+}
+.navr .login{
+  background:white;
+  color:black;
+  padding:5px 20px;
+  border-radius: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchr{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 3vh;
+  gap:17px;
+}
+.login h3{
+  color:black;
+}
+.install h3{
+  display: flex;
+  gap:5px;
+}
+.main{
+  display: flex;
+  padding: 5px;
+  position: relative;
+}
+.test{
+}
+.rgt{
+  width: 25vw;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #121212;
+  position: relative;
+  height: 90vh;
+  box-sizing: border-box;
+}
+.lft{
+  width: 75vw;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #121212;
+  position: relative;
+  height: 90vh;
+  box-sizing: border-box;
+}
+.rgtop{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 20px;
+}
+.rgtop h5{
+  font-weight: 900;
+}
+.icondiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1F1F1F;
+  padding:0 8px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.foot{
+  position: absolute;
+  bottom: 0;
+  width: 23vw;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+  box-sizing: border-box;
+}
+.foot a{
+  color:#B3B3B3;
+}
+.main{
+  
+}
+.btn{
+  box-sizing: border-box;
+}
+.button{
+  border:none;
+  background: black;
+  color:white;
+  padding: 5px 15px;
+  border-radius: 25px;
+  border:1px solid white;
+  margin-top: 30px;
+  display: flex;
+  gap:5px;
+  font-weight: bold;
+}
+
+.albums{
+  display:flex;
+  flex-direction: column;
+}
+.cardnav{
+  display:flex;
+  justify-content: space-between;
+}
+.cardcontainer{
+  display:flex;
+  height: 280px;
+  width:180px;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  margin:0 5px;
+  background: linear-gradient(120deg,#73F42A,#2AF492,#2AF4E3,#2BF42A);
+  border-radius: 7px;
+  color:black;
+}
+.card{
+  width:168px;
+  height: 150px;
+  border:none;
+  background:transparent;
+}
+.card img{
+ object-fit: contain;
+ border-radius: 7px;
+ border:none;
+}
+.info{
+ padding: 0 10px;
+}
+.info h4{
+  font-weight:bold;
+  font-size:20px;
+}
+.icondiv{
+  display: none;
+}
+.info p{
+  font-size: 1x;
+}
+.cardflow{
+  display: flex;
+  overflow: scroll;
+}
+.cardnav h1,.cardnav p{
+  font-weight: bold;
+}
+.playlistcontainer{
+  height:83%;
+  overflow: auto;
+}
+.playlistcontainer ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap:2px;
+  padding: 0;
+}
+.playlistcontainer ul li{
+  list-style-type:decimal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid #1ED760;
+  width:200px;
+  font-size:15px;
+  padding: 5px;
+  border-radius: 7px;
+  height:50px;
+  box-sizing: border-box;
+}
+.playlistcontainer ul li i{
+  font-size: 20px;
+}
+.playlistcontainer ul li .p{
+  font-size:15px;
+}
+.playlistcontainer ul li .name{
+  font-size:10px;
+}
+.footer{
+  height:5vh;
+  width: 96vw;
+  background: linear-gradient(120deg,#73F42A,#2AF492,#2AF4E3,#2BF42A);
+  border-radius: 10px;
+  position: absolute;
+  bottom:20px;
+  box-sizing: border-box;
+  margin: 10px;
+  left:8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color:black;
+  font-size:20px;
+}
+.butt{
+  font-size:55px;
+  display: flex;
+  gap:30px;
+  color:black;
+}
+.seek{
+  width: 96%;
+  height: 4px;
+  position: absolute;
+  bottom:10px;
+  background: black;
+  border-radius: 5px;
+  color:black;
+}
+.dot{
+  height:20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom:-9px;
+  background: black;
+  color:black;
+}
+.vol{ 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.vol i{
+  font-size:20px;
+}
+@media (max-width: 900px) {
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin:0;
+  }
+  .spotify {
+    display: block;
+    color: white;
+    position: absolute;
+    right:70px;
+  }
+  .home,.search,.navr,.center,.navr,.premium,.support,.download{
+    display: none;
+  }
+  .icondiv{
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  .rgt{
+    position: absolute;
+    left:-370px;
+    z-index: 1;
+    width:50vw;
+    height: calc(96vh-50px);
+    transition:1s ease-in;
+    top:0;
+    border-radius: 0px;
+    
+  }
+  .playlistcontainer{
+    max-height: 400px;
+  }
+  .foot{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size:10px;
+    width:150px;
+  }
+  .rgt h5{
+    font-size:14px;
+  }
+  .close{
+    display:block;
+  }
+  .button{
+    margin-bottom: 25px;
+  }
+  .playlistcontainer ul li{
+    width:150px;
+  }
+  .lft{
+    margin: 0;
+    width: 95vw;
+    height: calc(96vh-50px);
+    padding:10px;
+    margin: 0;
+  }
+  .logo{
+    position: absolute;
+    right:0;
+  }
+  .spotify h1{
+    font-weight: 900;
+    font-size: 20px;
+    
+  }
+  .ham{
+    display: block;
+    font-size: 35px;
+    position: absolute;
+    left: 5%;
+  }
+  .footer{
+    flex-direction: column;
+    height:180px;
+    font-size:15px;
+    width: 88vw;
+    gap:0px;
+  }
+  .seek{
+    bottom:4px;
+    height:3px;
+  }
+  .dot{
+    height:10px;
+    width:10px;
+    top:-4px;
+  }
+  .butt{
+    font-size: 39px;
+    gap:5px;
+  }
+  .vol input{
+    width:100px;
+    height:5px;
+  }
+}
